@@ -1,24 +1,32 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <PromiseCall/>
+
+    <div class="hello">
+      <h1>Async calls in vue</h1>
+
+      <PromiseCall />
+      <VuexCall />
+    </div>
   </div>
 </template>
 
 <script>
 import PromiseCall from './components/PromiseCall'
+import VuexCall from './components/VuexCall'
 
 export default {
   name: 'app',
   components: {
-    PromiseCall
+    PromiseCall,
+    VuexCall
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
