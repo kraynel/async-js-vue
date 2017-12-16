@@ -2,11 +2,11 @@
     <div class="buttonWithStatus">
         <button
             class="buttonToggleUpsideDown"
-            v-on:click="toggleCall"
+            @click="toggleCall"
         >
-            {{buttonText}}
+            {{ buttonText }}
         </button>
-        <span>{{strangerStatus}}</span>
+        <span>{{ strangerStatus }}</span>
     </div>
 </template>
 

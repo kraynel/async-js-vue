@@ -2,7 +2,11 @@
   <div class="hello">
     <h1>Async calls in vue</h1>
 
-    <ButtonWithStatus v-bind:toggle-call="togglePromiseCall" v-bind:stranger-status="strangerStatus" button-text="Promise call"></ButtonWithStatus>
+    <ButtonWithStatus
+      :toggle-call="togglePromiseCall"
+      :stranger-status="strangerStatus"
+      button-text="Promise call"
+    ></ButtonWithStatus>
   </div>
 </template>
 
@@ -15,7 +19,7 @@ export default {
   components: {
     ButtonWithStatus
   },
-  data () {
+  data() {
     return {
       upsideDownPromise: new UpsideDownPromise(),
       strangerStatus: 'In real world',
@@ -47,19 +51,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1,
-h2 {
+h1 {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
