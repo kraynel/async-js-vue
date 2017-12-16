@@ -6,13 +6,15 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "serve ./dist --single",
+    "start:dev": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "serve": "^6.4.1",
     "vue": "^2.5.2",
     "vuex": "^3.0.1"
   },
