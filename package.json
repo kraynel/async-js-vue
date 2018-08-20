@@ -14,7 +14,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "serve": "^6.4.1",
+    "serve": "^7.0.0",
     "vue": "^2.5.2",
     "vuex": "^3.0.1"
   },
